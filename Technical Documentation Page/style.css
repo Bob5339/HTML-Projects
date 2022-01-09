@@ -1,0 +1,35 @@
+div.main-body {
+    display: grid; 
+    grid-template-columns: minmax(250px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 1.5rem;
+}
+
+#navbar {
+    grid-area: navbar;
+    position: fixed; 
+}
+
+#navbar a {
+    border: 1px dashed black; 
+    color: lightpink; 
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem; 
+    text-decoration: none;
+}
+
+.main-header {
+    font-size: 1.7rem; 
+    font-weight: 600; 
+}
+
+@media screen and (max-width: 750px) {
+    div.main-body {
+        grid-template-columns:1fr; 
+        grid-template-areas:"navbar" "mainContent";
+    }
+    #navbar {
+        position: inherit; 
+    }
+}
