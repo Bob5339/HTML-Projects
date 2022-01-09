@@ -1,3 +1,7 @@
+.main-header, #navbar {
+    margin-top: 1rem; 
+}
+
 div.main-body {
     display: grid; 
     grid-template-columns: minmax(250px, auto) 1fr;
@@ -22,6 +26,11 @@ div.main-body {
 .main-header {
     font-size: 1.7rem; 
     font-weight: 600; 
+}
+
+.main-main {
+    grid-area: mainContent; 
+    font-family: 'Luxurious Roman', cursive;
 }
 
 @media screen and (max-width: 750px) {
