@@ -40,6 +40,14 @@ code {
     font-size: 1rem;  
 }
 
+.string {
+    color: red; 
+}
+
+.listnumbers {
+    color: darkgreen; 
+}
+
 @media screen and (max-width: 750px) {
     div.main-body {
         grid-template-columns:1fr; 
