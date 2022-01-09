@@ -33,6 +33,13 @@ div.main-body {
     font-family: 'Luxurious Roman', cursive;
 }
 
+code {
+    display: block; 
+    background-color: orange;
+    color: blue;
+    font-size: 1rem;  
+}
+
 @media screen and (max-width: 750px) {
     div.main-body {
         grid-template-columns:1fr; 
